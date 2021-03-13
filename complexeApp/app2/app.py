@@ -1,11 +1,10 @@
 from flask import Flask
-import os
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return f'Hello, World {os.environ["NOME"]}! From app 2'
+    return 'Hello, World! From app 2'
 
 
 if __name__ == '__main__':

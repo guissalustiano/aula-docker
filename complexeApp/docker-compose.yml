@@ -6,8 +6,6 @@ services:
     build: ./app1
   app2:
     build: ./app2
-    environment:
-      - NAME=Turing
   proxy:
     image: nginx
     volumes:
